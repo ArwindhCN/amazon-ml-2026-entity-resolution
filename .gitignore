@@ -1,0 +1,19 @@
+# Challenge data and everything derived from it: never commit
+dataset/
+cache/
+output/
+submissions/
+samples/
+*.tsv
+*.parquet
+*.zip
+
+# Models: downloaded or rebuilt (see code/business_entity_resolution/src/model/README.md)
+code/business_entity_resolution/src/model/*
+!code/business_entity_resolution/src/model/README.md
+
+# Python / OS
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
