@@ -5,7 +5,7 @@ Run this from inside the student_resource/ folder:
 
 It does two things:
   1. Prints basic stats (row counts, countries, how many S1 entities have no match, etc.)
-  2. Writes small sample files into samples/ that are small enough to upload to Claude.
+  2. Writes small sample files into samples/ that are small enough to open and inspect by hand.
 """
 import csv
 import os
@@ -93,4 +93,4 @@ with open(f"{OUT}/train_examples.txt", "w", encoding="utf-8") as f:
             f.write(f"    -> {m} | {lookup.get(m, '??')}\n")
         f.write("\n")
 
-print(f"\nDone. Upload these to Claude:\n  {OUT}/train_examples.txt\n  {OUT}/france_test_sample.tsv")
+print(f"\nDone. Sample files written:\n  {OUT}/train_examples.txt\n  {OUT}/france_test_sample.tsv")
